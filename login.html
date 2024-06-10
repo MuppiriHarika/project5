@@ -1,0 +1,60 @@
+
+<html>
+   <head>
+         <title>JavaScript functions </title>
+         <style>
+           /* Smart phone */
+            @media screen and (min-width:320px )  {
+               body {
+                  background-color: white;
+               }
+            }
+            /* Tablet,ipad  */
+            @media Screen and(min-width:760px) and (max-width:1024px){
+               body {
+                  background-color: white;
+               }
+            }   
+            /* Desktops and laptops */
+            @media Screen and (min-width:1224px) {
+               body {
+                  background-color: white;
+               }
+            }
+            /* Large Screens.... */
+            @media Screen and (min-width:1768px) {
+               body {
+                  background-color: white;
+               }
+            }
+         </style>
+      </head>      
+      <script>
+         // User Validations
+ function loginValidation() {
+             // harika
+   var uname = document.myform.username.value;
+              //harika@1234
+   var password = document.myform.password.value;
+             if(uname==null || uname=="") {
+               alert("Name cant be blank")
+               return false;  
+            } else if (password.length<6){
+               alert("Password Must be 6 letters")
+               return false;
+            }  
+            return true                 
+         }           
+      </script>
+      </head>
+      <body background="icecream.jpg">
+          <h2>Login Page</h2>  
+<form name="myform" action="loginsuccess.html" 	onsubmit="return loginValidation(this)">
+ 
+User Name : <input type="text" name="username"> <br>
+Password :  <input type="password" name="password"> <br>
+         <input type="submit" value="Submit">     
+          
+        </form>
+   </body>
+</html>
